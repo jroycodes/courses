@@ -11,6 +11,8 @@
     --color-lime-300: oklch(89.7% 0.196 126.665);
     --color-blue-100: oklch(93.2% 0.032 255.585);
     --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -211,6 +213,9 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
@@ -244,6 +249,9 @@
   .w-auto {
     width: auto;
   }
+  .max-w-14 {
+    max-width: calc(var(--spacing) * 14);
+  }
   .max-w-67 {
     max-width: calc(var(--spacing) * 67);
   }
@@ -265,6 +273,9 @@
   .max-w-\[20\%\] {
     max-width: 20%;
   }
+  .max-w-\[21\%\] {
+    max-width: 21%;
+  }
   .max-w-\[25\%\] {
     max-width: 25%;
   }
@@ -276,6 +287,9 @@
   }
   .max-w-\[100\%\] {
     max-width: 100%;
+  }
+  .max-w-fit {
+    max-width: fit-content;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -294,6 +308,9 @@
   }
   .flex-wrap {
     flex-wrap: wrap;
+  }
+  .flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
   }
   .items-center {
     align-items: center;
@@ -356,6 +373,10 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-l {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 1px;
+  }
   .bg-lime-300 {
     background-color: var(--color-lime-300);
   }
@@ -376,6 +397,12 @@
   }
   .align-middle {
     vertical-align: middle;
+  }
+  .font-\[\'DMSans\'\] {
+    font-family: 'DMSans';
+  }
+  .font-\[\'DM_Sans\'\] {
+    font-family: 'DM Sans';
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -456,6 +483,12 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
   }
   .text-gray-600 {
     color: var(--color-gray-600);
@@ -597,6 +630,21 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .md\:max-w-0 {
+    @media (width >= 48rem) {
+      max-width: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:max-w-100 {
+    @media (width >= 48rem) {
+      max-width: calc(var(--spacing) * 100);
+    }
+  }
+  .lg\:max-w-100 {
+    @media (width >= 64rem) {
+      max-width: calc(var(--spacing) * 100);
+    }
   }
 }
 @property --tw-rotate-x {
