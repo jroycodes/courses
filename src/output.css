@@ -291,6 +291,9 @@
   .w-auto {
     width: auto;
   }
+  .max-w-10 {
+    max-width: calc(var(--spacing) * 10);
+  }
   .max-w-14 {
     max-width: calc(var(--spacing) * 14);
   }
@@ -333,6 +336,9 @@
   .max-w-100 {
     max-width: calc(var(--spacing) * 100);
   }
+  .max-w-110 {
+    max-width: calc(var(--spacing) * 110);
+  }
   .max-w-120 {
     max-width: calc(var(--spacing) * 120);
   }
@@ -341,6 +347,18 @@
   }
   .max-w-\[\%\] {
     max-width: %;
+  }
+  .max-w-\[0\%\] {
+    max-width: 0%;
+  }
+  .max-w-\[5\%\] {
+    max-width: 5%;
+  }
+  .max-w-\[10\%\] {
+    max-width: 10%;
+  }
+  .max-w-\[10\] {
+    max-width: 10;
   }
   .max-w-\[20\%\] {
     max-width: 20%;
@@ -356,6 +374,15 @@
   }
   .max-w-\[50\%\] {
     max-width: 50%;
+  }
+  .max-w-\[50\] {
+    max-width: 50;
+  }
+  .max-w-\[60\%\] {
+    max-width: 60%;
+  }
+  .max-w-\[80\%\] {
+    max-width: 80%;
   }
   .max-w-\[100\%\] {
     max-width: 100%;
@@ -674,6 +701,14 @@
     --tw-leading: calc(var(--spacing) * 10);
     line-height: calc(var(--spacing) * 10);
   }
+  .leading-11 {
+    --tw-leading: calc(var(--spacing) * 11);
+    line-height: calc(var(--spacing) * 11);
+  }
+  .leading-11\.5 {
+    --tw-leading: calc(var(--spacing) * 11.5);
+    line-height: calc(var(--spacing) * 11.5);
+  }
   .leading-12 {
     --tw-leading: calc(var(--spacing) * 12);
     line-height: calc(var(--spacing) * 12);
@@ -891,6 +926,48 @@
   .lg\:max-w-100 {
     @media (width >= 64rem) {
       max-width: calc(var(--spacing) * 100);
+    }
+  }
+  .lg\:leading-0 {
+    @media (width >= 64rem) {
+      --tw-leading: calc(var(--spacing) * 0);
+      line-height: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:leading-1 {
+    @media (width >= 64rem) {
+      --tw-leading: calc(var(--spacing) * 1);
+      line-height: calc(var(--spacing) * 1);
+    }
+  }
+  .lg\:leading-12 {
+    @media (width >= 64rem) {
+      --tw-leading: calc(var(--spacing) * 12);
+      line-height: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:leading-13 {
+    @media (width >= 64rem) {
+      --tw-leading: calc(var(--spacing) * 13);
+      line-height: calc(var(--spacing) * 13);
+    }
+  }
+  .lg\:leading-15 {
+    @media (width >= 64rem) {
+      --tw-leading: calc(var(--spacing) * 15);
+      line-height: calc(var(--spacing) * 15);
+    }
+  }
+  .lg\:leading-18 {
+    @media (width >= 64rem) {
+      --tw-leading: calc(var(--spacing) * 18);
+      line-height: calc(var(--spacing) * 18);
+    }
+  }
+  .lg\:leading-19 {
+    @media (width >= 64rem) {
+      --tw-leading: calc(var(--spacing) * 19);
+      line-height: calc(var(--spacing) * 19);
     }
   }
 }
